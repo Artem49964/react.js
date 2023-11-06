@@ -1,7 +1,7 @@
 import {axiosService} from "./axios.service";
 import {urls} from "../constants/urls";
 
-const userService = {
+const postService = {
     getAll:() => axiosService.get(urls.posts),
     getById:(id) => axiosService.get(urls.byId(id)),
     create:(post) => axiosService.post(urls.posts, post),
@@ -11,5 +11,5 @@ const userService = {
 
 
 export {
-    userService
+    postService
 }
